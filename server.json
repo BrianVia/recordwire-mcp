@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.recordwirehq/recordwire",
+  "title": "Recordwire",
+  "description": "U.S. business-registry data and change events from official state sources, for agents.",
+  "websiteUrl": "https://recordwirehq.com/mcp",
+  "repository": {
+    "url": "https://github.com/BrianVia/recordwire-mcp",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.recordwirehq.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <your Recordwire API key>, from https://recordwirehq.com/app",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
