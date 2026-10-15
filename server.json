@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "com.recordwirehq/recordwire",
+  "name": "io.github.BrianVia/recordwire",
   "title": "Recordwire",
   "description": "U.S. business-registry data and change events from official state sources, for agents.",
   "websiteUrl": "https://recordwirehq.com/mcp",
