@@ -6,6 +6,9 @@ reinstated), address, registered-agent, and officer changes. Data comes from off
 sources: bulk files and open data where states publish them, and the state's own public business
 search where they do not.
 
+Recordwire is a hosted service. This repository holds the server's public listing and docs, not
+its source code.
+
 - **Server:** `https://api.recordwirehq.com/mcp` (Streamable HTTP)
 - **Auth:** `Authorization: Bearer <key>`. Get a key at https://recordwirehq.com/app.
 - **Docs:** https://recordwirehq.com/mcp and https://recordwirehq.com/docs
@@ -50,9 +53,10 @@ Cursor, Claude Desktop, or any client that takes a JSON config:
 
 ## Coverage
 
-11 states: Florida, New York, Colorado, Pennsylvania, Virginia, Connecticut, and Oregon (official
+12 states: Florida, New York, Colorado, Pennsylvania, Virginia, Connecticut, and Oregon (official
 bulk files and open data, full change events), plus Massachusetts, Idaho, Wyoming, and Missouri
-(read from each state's public search, new formations). About 26 million companies. Live coverage
+(read from each state's public search, new formations) and Delaware (Division of Corporations
+records from a licensed data partner, new formations). About 26.7 million companies. Live coverage
 and freshness: https://recordwirehq.com/states
 
 ## Example prompts
@@ -60,12 +64,14 @@ and freshness: https://recordwirehq.com/states
 - "List Florida LLCs formed this week whose names contain Holdings."
 - "Has ACME LOGISTICS LLC in Virginia changed its registered agent or name since 2020?"
 - "Which Colorado companies were dissolved in the last 30 days?"
+- "How many new Delaware LLCs were formed this week, and which registered agents filed them?"
 - "Watch every new Massachusetts company with 'Merger Sub' in its name and tell me when it changes."
 
 ## Pricing
 
 Flat monthly plans, no per-call metering: $100/month for one state, $200 for any three, $500 for
-every covered state. See https://recordwirehq.com/#pricing.
+every covered state. See https://recordwirehq.com/#pricing. No code? The weekly digest emails
+each week's new companies for a state as a CSV, $19/month: https://recordwirehq.com/digest.
 
 ## Contact
 
